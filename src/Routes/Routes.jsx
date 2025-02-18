@@ -9,6 +9,8 @@ import Add_task from "../component/Tasks/Add_task";
 import Update_task from "../component/Tasks/Update_task";
 import PrivateRoute from "./PrivateRoute";
 import Edit_profile from "../component/pages/Profile/Edit_profile";
+import PasswordForgotPage from "../component/pages/forgot-password/PasswordForgotPage";
+import ResetPassword from "../component/pages/forgot-password/ResetPassword";
 
 export const router = createBrowserRouter([
   {
@@ -30,6 +32,14 @@ export const router = createBrowserRouter([
       {
         path: "signup",
         element: <Signup></Signup>,
+      },
+      {
+        path: "forgot-password",
+        element: <PasswordForgotPage></PasswordForgotPage>,
+      },
+      {
+        path: "forgot-password/:userId/:token",
+        element: <ResetPassword></ResetPassword>,
       },
       {
         path: "profile/:id",

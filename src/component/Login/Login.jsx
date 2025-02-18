@@ -104,12 +104,19 @@ const Login = () => {
               />
             </div>
           </form>
-          <p className="ml-16">
-            New Here?{" "}
-            <Link to="/signup" className="underline">
-              Signup here
-            </Link>
-          </p>
+          <div className="flex justify-between px-14">
+            <p className="">
+              New Here?{" "}
+              <Link to="/signup" className="underline">
+                Signup here
+              </Link>
+            </p>
+            <p className="">
+              <Link to="/forgot-password" className="underline">
+                Fogot Password?
+              </Link>
+            </p>
+          </div>
         </div>
       </div>
     </div>
